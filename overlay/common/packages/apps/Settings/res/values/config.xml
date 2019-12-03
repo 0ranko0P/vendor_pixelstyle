@@ -15,12 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
-    <string name="config_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
-
     <!-- Extras -->
-    <string name="config_styles_and_wallpaper_picker_class">com.android.customization.picker.CustomizationPickerActivity</string>
     <string name="config_emergency_intent_action">com.google.android.safetyhub.SAFETY_HUB</string>
     <string name="config_emergency_package_name">com.google.android.apps.safetyhub</string>
     <string name="config_settingsintelligence_log_action">com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER</string>
