@@ -28,6 +28,11 @@ PRODUCT_PACKAGES += \
     MatchmakerPrebuiltPixel4
 endif
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
@@ -68,6 +73,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Gestures
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Sounds
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=The_big_adventure.ogg \
+    ro.config.notification_sound=Popcorn.ogg \
+    ro.config.alarm_alert=Bright_morning.ogg
 
 # IME
 PRODUCT_PRODUCT_PROPERTIES += \
