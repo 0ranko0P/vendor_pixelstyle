@@ -28,11 +28,6 @@ PRODUCT_PACKAGES += \
     MatchmakerPrebuiltPixel4
 endif
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # build.prop entrys
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.wallpapers_loc_request_suw=true
