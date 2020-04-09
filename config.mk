@@ -20,8 +20,7 @@ PRODUCT_PACKAGES += \
     PixelThemesStub2019 \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
-    GooglePermissionControllerOverlay \
-    PixelDocumentsUIGoogleOverlay
+    GooglePermissionControllerOverlay
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
 PRODUCT_PACKAGES += \
