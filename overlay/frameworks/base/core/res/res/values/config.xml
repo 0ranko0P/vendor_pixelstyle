@@ -37,6 +37,7 @@
     <!-- An array of packages that can make sound on the ringer stream in priority-only DND
      mode -->
     <string-array name="config_priorityOnlyDndExemptPackages">
+        <item>com.android.dialer</item>
         <item>com.google.android.dialer</item>
     </string-array>
 
@@ -94,8 +95,8 @@
          that matches the signature of at least one package on this list.
          -->
     <string-array name="config_locationProviderPackageNames">
-        <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
+        <item>com.google.android.gms</item>
     </string-array>
 
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
@@ -128,7 +129,7 @@
                protected by the BIND_NETWORK_RECOMMENDATION_SERVICE permission.
          This must be set to a valid network recommendation app or empty.
      -->
-    <string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>
+    <!-- string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string -->
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName">com.google.android.gms</string>
@@ -187,7 +188,7 @@
     <string name="config_defaultListenerAccessPackages">com.google.android.apps.nexuslauncher:com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
 
     <!-- Component name for the default module metadata provider on this device -->
-    <string name="config_defaultModuleMetadataProvider">com.google.android.modulemetadata</string>
+    <string name="config_defaultModuleMetadataProvider">com.android.modulemetadata</string>
 
     <!-- The component name for the default profile supervisor, which can be set as a profile owner
     even after user setup is complete. The defined component should be used for supervision purposes
@@ -227,7 +228,7 @@
         a bugreport or incident report with EXPLICT-level sharing flags is going to be
         shared, this app will be sent the PENDING_INCIDENT_REPORTS_CHANGED broadcast.
     -->
-    <string name="config_incidentReportApproverPackage">com.google.android.permissioncontroller</string>
+    <string name="config_incidentReportApproverPackage">com.android.permissioncontroller</string>
 
     <!-- Component name for the activity that will be presenting the Recents UI, which will receive special permissions for API related
           to fetching and presenting recent tasks. The default configuration uses Launcehr3QuickStep as default launcher and points to
@@ -249,18 +250,18 @@
     <string name="config_defaultAttentionService">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
 
     <!-- The name of the package that will hold the dialer role by default. -->
-    <string name="config_defaultDialer">com.google.android.dialer</string>
+    <string name="config_defaultDialer">com.android.dialer</string>
 
     <string name="config_defaultGallery">com.google.android.apps.photos</string>
-    <string name="config_defaultMusic">com.google.android.music</string>
+    <string name="config_defaultMusic">org.omnirom.gramophone</string>
 
     <!-- Package name for the device provisioning package. -->
-    <string name="config_deviceProvisioningPackage">com.google.android.apps.work.oobconfig</string>
+    <!-- string name="config_deviceProvisioningPackage">com.google.android.apps.work.oobconfig</string -->
 
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
     -->
-    <string name="config_wallpaperCropperPackage">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaperCropperPackage">com.android.wallpapercropper</string>
 
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
     <bool name="config_defaultRingtonePickerEnabled">false</bool>
@@ -294,7 +295,7 @@
          by an app at run-time. When disabled, only the
          config_geocoderProviderPackageName package will be searched for
          geocoder, otherwise packages whose signature matches the signatures of
-         config_locationProviderPackageNames will be searched, and the service
+         config_locationproviderpackagenamesconfig_locationproviderpackagenames will be searched, and the service
          with the highest version number will be picked. Anyone who wants to
          disable the overlay mechanism can set it to false.
          -->
