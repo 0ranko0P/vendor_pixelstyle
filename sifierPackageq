@@ -1,0 +1,84 @@
+[1mdiff --git a/config.mk b/config.mk[m
+[1mindex da33a57..8964fd4 100644[m
+[1m--- a/config.mk[m
+[1m+++ b/config.mk[m
+[36m@@ -22,10 +22,10 @@[m [mPRODUCT_PACKAGES += \[m
+     SettingsIntelligenceGooglePrebuilt \[m
+     GooglePermissionControllerOverlay[m
+ [m
+[31m-ifeq ($(TARGET_GAPPS_ARCH),arm64)[m
+[31m-PRODUCT_PACKAGES += \[m
+[31m-    MatchmakerPrebuiltPixel4[m
+[31m-endif[m
+[32m+[m[32m# ifeq ($(TARGET_GAPPS_ARCH),arm64)[m
+[32m+[m[32m# PRODUCT_PACKAGES += \[m
+[32m+[m[32m#     MatchmakerPrebuiltPixel4[m
+[32m+[m[32m# endif[m
+ [m
+ # Bootanimation[m
+ ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)[m
+[1mdiff --git a/overlay/frameworks/base/core/res/res/values/config.xml b/overlay/frameworks/base/core/res/res/values/config.xml[m
+[1mindex c4756a7..1e8267a 100644[m
+[1m--- a/overlay/frameworks/base/core/res/res/values/config.xml[m
+[1m+++ b/overlay/frameworks/base/core/res/res/values/config.xml[m
+[36m@@ -161,7 +161,7 @@[m
+          disabled.[m
+          Example: "com.android.augmentedautofill/.AugmentedAutofillService"[m
+     -->[m
+[31m-    <string name="config_defaultAugmentedAutofillService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>[m
+[32m+[m[32m    <!-- string name="config_defaultAugmentedAutofillService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string -->[m
+ [m
+     <!-- The package name for the system's content suggestions service.[m
+          Provides suggestions for text and image selection regions in snapshots of apps and should[m
+[36m@@ -171,7 +171,7 @@[m
+          disabled.[m
+          Example: "com.android.contentsuggestions/.ContentSuggestionsService"[m
+     -->[m
+[31m-    <string name="config_defaultContentSuggestionsService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>[m
+[32m+[m[32m    <!-- string name="config_defaultContentSuggestionsService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string -->[m
+ [m
+     <!-- The package name for the system's content capture service.[m
+          This service must be trusted, as it can be activated without explicit consent of the user.[m
+[36m@@ -179,7 +179,7 @@[m
+          disabled.[m
+          Example: "com.android.contentcapture/.ContentcaptureService"[m
+     -->[m
+[31m-    <string name="config_defaultContentCaptureService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>[m
+[32m+[m[32m    <!-- string name="config_defaultContentCaptureService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string -->[m
+ [m
+     <!-- Colon separated list of package names that should be granted DND access -->[m
+     <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub</string>[m
+[36m@@ -199,13 +199,13 @@[m
+          This service must be trusted, as the system binds to it and keeps it running.[m
+          Example: "com.android.captions/.SystemCaptionsManagerService"[m
+     -->[m
+[31m-    <string name="config_defaultSystemCaptionsManagerService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>[m
+[32m+[m[32m    <!-- string name="config_defaultSystemCaptionsManagerService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string -->[m
+ [m
+     <!-- The component name for the system-wide captions service.[m
+          This service must be trusted, as it controls part of the UI of the volume bar.[m
+          Example: "com.android.captions/.SystemCaptionsService"[m
+     -->[m
+[31m-    <string name="config_defaultSystemCaptionsService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>[m
+[32m+[m[32m    <!-- string name="config_defaultSystemCaptionsService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string -->[m
+ [m
+     <!-- The package name for the default system textclassifier service.[m
+          This service must be trusted, as it can be activated without explicit consent of the user.[m
+[36m@@ -214,7 +214,7 @@[m
+          set to empty string), a default textclassifier will be loaded in the calling app's process.[m
+          See android.view.textclassifier.TextClassificationManager.[m
+     -->[m
+[31m-    <string name="config_defaultTextClassifierPackage">com.google.android.as</string>[m
+[32m+[m[32m    <!-- string name="config_defaultTextClassifierPackage">com.google.android.as</string -->[m
+ [m
+     <!-- The package name for the default wellbeing app.[m
+          This package must be trusted, as it has the permissions to control other applications[m
+[36m@@ -247,7 +247,7 @@[m
+          This service must be trusted, as it can be activated without explicit consent of the user.[m
+          See android.attention.AttentionManagerService.[m
+     -->[m
+[31m-    <string name="config_defaultAttentionService">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>[m
+[32m+[m[32m    <!-- string name="config_defaultAttentionService">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string -->[m
+ [m
+     <!-- The name of the package that will hold the dialer role by default. -->[m
+     <string name="config_defaultDialer">com.android.dialer</string>[m

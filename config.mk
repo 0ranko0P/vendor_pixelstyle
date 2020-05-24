@@ -22,10 +22,10 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt \
     GooglePermissionControllerOverlay
 
-ifeq ($(TARGET_GAPPS_ARCH),arm64)
-PRODUCT_PACKAGES += \
-    MatchmakerPrebuiltPixel4
-endif
+# ifeq ($(TARGET_GAPPS_ARCH),arm64)
+# PRODUCT_PACKAGES += \
+#     MatchmakerPrebuiltPixel4
+# endif
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
