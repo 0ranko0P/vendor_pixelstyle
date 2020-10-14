@@ -16,6 +16,7 @@ LOCAL_PATH := vendor/pixelstyle
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
+    NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019Static \
     PixelThemesStub2019 \
     SettingsIntelligenceGooglePrebuilt

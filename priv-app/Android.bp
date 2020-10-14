@@ -27,6 +27,19 @@ android_app_import {
 }
 
 android_app_import {
+	name: "NexusLauncherRelease",
+	owner: "pixelstyle",
+	apk: "NexusLauncherRelease/NexusLauncherRelease.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+	overrides: ["Launcher3QuickStep"],
+}
+
+android_app_import {
 	name: "SettingsIntelligenceGooglePrebuilt",
 	owner: "pixelstyle",
 	apk: "SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk",
