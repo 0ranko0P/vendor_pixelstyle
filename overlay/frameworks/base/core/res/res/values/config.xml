@@ -37,7 +37,6 @@
     <!-- An array of packages that can make sound on the ringer stream in priority-only DND
      mode -->
     <string-array name="config_priorityOnlyDndExemptPackages">
-        <item>com.android.dialer</item>
         <item>com.google.android.dialer</item>
     </string-array>
 
@@ -244,10 +243,10 @@
     <!-- string name="config_secondaryHomeComponent">com.google.android.apps.nexuslauncher/com.android.launcher3.SecondaryDisplayLauncher</string -->
 
     <!-- The name of the package that will hold the dialer role by default. -->
-    <string name="config_defaultDialer">com.android.dialer</string>
+    <string name="config_defaultDialer">com.google.android.dialer</string>
 
     <string name="config_defaultGallery">com.google.android.apps.photos</string>
-    <string name="config_defaultMusic">org.omnirom.gramophone</string>
+    <string name="config_defaultMusic">com.kabouzeid.gramophone</string>
 
     <!-- Package name for the device provisioning package. -->
     <!-- string name="config_deviceProvisioningPackage">com.google.android.apps.work.oobconfig</string -->
@@ -255,7 +254,7 @@
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
     -->
-    <string name="config_wallpaperCropperPackage">com.android.wallpapercropper</string>
+    <string name="config_wallpaperCropperPackage">com.google.android.apps.wallpaper</string>
 
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
     <bool name="config_defaultRingtonePickerEnabled">false</bool>
@@ -289,7 +288,7 @@
          by an app at run-time. When disabled, only the
          config_geocoderProviderPackageName package will be searched for
          geocoder, otherwise packages whose signature matches the signatures of
-         config_locationproviderpackagenamesconfig_locationproviderpackagenames will be searched, and the service
+         config_locationProviderPackageNames will be searched, and the service
          with the highest version number will be picked. Anyone who wants to
          disable the overlay mechanism can set it to false.
          -->
