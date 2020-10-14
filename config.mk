@@ -20,10 +20,12 @@ PRODUCT_PACKAGES += \
     PixelThemesStub2019 \
     SettingsIntelligenceGooglePrebuilt
 
-# ifeq ($(TARGET_GAPPS_ARCH),arm64)
-# PRODUCT_PACKAGES += \
-#     MatchmakerPrebuiltPixel4
-# endif
+ifeq ($(TARGET_GAPPS_ARCH),arm64)
+	DPP_PATH := $(LOCAL_PATH)/priv-app/DevicePersonalizationPrebuiltPixel2
+	DECOMPRESS := $(shell tar -xjf $(DPP_PATH)/DevicePersonalizationPrebuiltPixel2.apk.tar.bz2 -C $(DPP_PATH)/)
+PRODUCT_PACKAGES += \
+    DevicePersonalizationPrebuiltPixel2
+endif
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
