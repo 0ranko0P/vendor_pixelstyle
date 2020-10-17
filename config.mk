@@ -18,9 +18,7 @@ LOCAL_PATH := vendor/pixelstyle
 PRODUCT_PACKAGES += \
     NexusWallpapersStubPrebuilt2019Static \
     PixelThemesStub2019 \
-    SafetyHubPrebuilt \
-    SettingsIntelligenceGooglePrebuilt \
-    GooglePermissionControllerOverlay
+    SettingsIntelligenceGooglePrebuilt
 
 # ifeq ($(TARGET_GAPPS_ARCH),arm64)
 # PRODUCT_PACKAGES += \
