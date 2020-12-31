@@ -22,10 +22,12 @@ PRODUCT_PACKAGES += \
     SettingsIntelligenceGooglePrebuilt
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
-	DPP_PATH := $(LOCAL_PATH)/priv-app/DevicePersonalizationPrebuiltPixel2
-	DECOMPRESS := $(shell tar -xjf $(DPP_PATH)/DevicePersonalizationPrebuiltPixel2.apk.tar.bz2 -C $(DPP_PATH)/)
+	DPP_PATH := $(LOCAL_PATH)/priv-app/DevicePersonalizationPrebuiltPixel4
+ifeq ($(wildcard $(DPP_PATH)/DevicePersonalizationPrebuiltPixel4.apk),)
+	DECOMPRESS := $(shell tar -xjf $(DPP_PATH)/DevicePersonalizationPrebuiltPixel4.apk.tar.bz2 -C $(DPP_PATH)/)
+endif
 PRODUCT_PACKAGES += \
-    DevicePersonalizationPrebuiltPixel2
+    DevicePersonalizationPrebuiltPixel4
 endif
 
 # Gestures

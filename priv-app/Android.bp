@@ -15,9 +15,9 @@
  */
 
 android_app_import {
-	name: "DevicePersonalizationPrebuiltPixel2",
+	name: "DevicePersonalizationPrebuiltPixel4",
 	owner: "pixelstyle",
-	apk: "DevicePersonalizationPrebuiltPixel2/DevicePersonalizationPrebuiltPixel2.apk",
+	apk: "DevicePersonalizationPrebuiltPixel4/DevicePersonalizationPrebuiltPixel4.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
