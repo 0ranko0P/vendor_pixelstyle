@@ -110,9 +110,6 @@
     <!-- The name of the package that will hold the assistant role by default. -->
     <string name="config_defaultAssistant">com.google.android.googlequicksearchbox</string>
 
-    <!-- The name of the package that will hold the assistant role by default. -->
-    <string name="config_defaultAssistantAccessComponent">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
-
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
          without explicit consent of the user. If no autofill service with the
@@ -128,7 +125,7 @@
                protected by the BIND_NETWORK_RECOMMENDATION_SERVICE permission.
          This must be set to a valid network recommendation app or empty.
      -->
-    <!-- string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string -->
+    <string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName">com.google.android.gms</string>
@@ -143,10 +140,6 @@
 
     <!-- Class name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_package_name">com.google.android.deskclock</string>
-
-    <!-- The app which will handle routine based automatic battery saver, if empty the UI for
-         routine based battery saver will be hidden -->
-    <string name="config_batterySaverScheduleProvider">com.google.android.apps.turbo</string>
 
     <!-- The package name for the system's app prediction service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -185,9 +178,6 @@
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
-
-    <!-- Component name for the default module metadata provider on this device -->
-    <string name="config_defaultModuleMetadataProvider">com.android.modulemetadata</string>
 
     <!-- The component name for the default profile supervisor, which can be set as a profile owner
     even after user setup is complete. The defined component should be used for supervision purposes
