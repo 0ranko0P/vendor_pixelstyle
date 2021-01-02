@@ -17,8 +17,8 @@ LOCAL_PATH := vendor/pixelstyle
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     NexusLauncherRelease \
-    NexusWallpapersStubPrebuilt2019Static \
-    PixelThemesStub2019 \
+    NexusWallpapersStubPrebuilt2020_midyear \
+    PixelThemesStub \
     SettingsIntelligenceGooglePrebuilt
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
