@@ -250,6 +250,9 @@
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer">com.google.android.dialer</string>
 
+    <!-- The name of the package that will hold the call screening role by default. -->
+    <string name="config_defaultCallScreening">com.google.android.dialer</string>
+
     <string name="config_defaultGallery">com.google.android.apps.photos</string>
     <string name="config_defaultMusic">com.kabouzeid.gramophone</string>
 
