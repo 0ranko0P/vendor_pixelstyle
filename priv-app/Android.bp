@@ -32,7 +32,7 @@ android_app_import {
 	apk: "NexusLauncherRelease/NexusLauncherRelease.apk",
 	presigned: true,
 	dex_preopt: {
-		enabled: false,
+		enabled: true,
 	},
 	privileged: true,
 	system_ext_specific: true,
